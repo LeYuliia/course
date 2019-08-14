@@ -1,0 +1,77 @@
+
+
+body{
+    font-family: "Playfair Display", sans-serif; 
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left:200px;
+    margin-right:143px;
+}
+
+.main-menu{
+    font-size: 14px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.main-menu a {
+    color: #626262;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-menu a:hover{
+    color: #03a9f4;
+}
+.main-menu-item {
+    display: inline-block;
+}
+
+.main-menu-link{
+    display: block;
+    text-align: center;
+    width: 113px;
+    margin-right: 44px;
+    margin-left: 44px;
+}
+
+.img_name {
+font-family: "Ubuntu", sans-serif;
+color: #b4ad9e;
+width: 417px;
+height: 20px;
+}
+
+.article {
+    
+    width: 420px;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 57px;
+    margin-right: 30px;
+    margin-bottom: 57px;
+}
+
+.article p{
+    width: 420px;
+    height: 78px;
+}
+.article h2{
+    width: 420px;
+    height: 39px;
+}
+
+button{
+    height: 61px;
+    width: 164px;
+    border: 1px solid black;
+    background: white;
+    position: relative;
+    display: block;
+    margin-left: 359px;
+    margin-bottom: 71px;
+}
+
