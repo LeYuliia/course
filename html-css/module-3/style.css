@@ -1,25 +1,21 @@
 html{
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 
 *,
 *::before
 *::after{
-    box-sizing: inherit;
-}
+    box-sizing: inherit;}
 
 .container{
     width: 900px;
     margin: 0 auto;
-    font-size: 0px;
-}
+    font-size: 0px;}
 
 body{
     font-family: "Playfair Display", sans-serif; 
     color: #626262;
     font-size: 14px;
-    line-height: 24px;
-}
+    line-height: 24px;}
 
 
 .menu {
@@ -28,79 +24,77 @@ body{
     text-align: center;
     vertical-align: middle;
     margin: 0px;
-    padding: 0px;
-}
+    padding: 0px;}
+
+
 .menu li{
     display: inline-block;
     padding-top: 77px;
-    padding-bottom: 104px;
-}
+    padding-bottom: 104px;}
 .menu li:not(:last-child){
-    margin-right: 120px;
-}
+    margin-right: 120px;}
+
 
 .menu a {
     color: #626262;
     font-weight: 400;
     text-transform: uppercase;
-    text-decoration: none;
-}
+    text-decoration: none;}
 .menu a:hover{
-    color: #03a9f4;
-}
+    color: #03a9f4;}
 .menu a:focus{
-    color: #03a9f4;
-}
-
-
-.img_name {
-font-family: "Ubuntu", sans-serif;
-color: #b4ad9e;
-width: 420px;
-height: 20px;
-font-size: 14px;
-margin-bottom: 24px;
-}
+    color: #03a9f4;}
 
 
 
 .article {
     display: inline-block;
     width: 420px;
-    margin: 0px;
+    margin-bottom: 130px;
     padding-right: 60px;
-    font-size: 14px;
-}
+    font-size: 14px;}
 .article:nth-child(2n) {
-    padding-right: 0px;
-}
+        padding-right: 0px;}
+ .article:nth-last-child(-n+3){
+        margin-bottom:0px;} 
+/*С этим псевдоклассом у меня возникли трудности. Мне нужно убрать нижний марджин у 2х последних дочерних элементов article. 
+ Для этого я использовала команду, которая была показана в видео с практикой (37я минута видео). Но разница в том, 
+ что в видео нам нужно было убрать 3 последних элемента, поэтому использовали (-n+3) и все сработало.
+ У меня же 2 элемента, поэтому я задала (-n+2), как и советовали в видео.
+ Но вместо 2х последних элементов марджин исчез только в последнем. 
+ Что я не так поняла и где ошиблась? Почему эта команда работает для 2х, а не 3х элементов?*/
+
  
 
-.article h2{
+.img_name {
+    font-family: "Ubuntu", sans-serif;
+    color: #b4ad9e;
     width: 420px;
-    height: 39px;
+    height: 20px;
+    font-size: 14px;
+    margin-bottom: 24px;}
+
+
+.article h2 {
     font-size: 30px;
-    /* Если считать расстояние между h2 и р по формуле, то выходит, что margin будет равен -109px. Как правильно задать margin в таком случе?*/
-}
+    margin-bottom: 32px;}
 
 .article p{
-    width: 420px;
-    height: 78px;
     font-size: 14px;
-    margin-bottom: 116px;
-}
-
+    margin: 0;}
 
 
 button{
-    height: 61px;
-    width: 164px;
+    margin:0 auto;
+    padding: 0px;
+    min-height: 60px;
+    min-width: 164px;
+    cursor: pointer;
     border: 1px solid black;
     background: white;
-    position: relative;
-    display: block;
-    margin-top: 38px;
-    margin-bottom: 71px;
-    font-size: 20px;
-}
+    display:block;
+    margin-top: 52px;
+    margin-bottom: 70px;
+    font-size: 20px;}
+
 
