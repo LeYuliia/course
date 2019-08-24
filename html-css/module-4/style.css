@@ -60,17 +60,18 @@ body{
         text-transform: uppercase;          
         text-decoration: none;
         display:block;}
-    .navigation a:hover{
-            color: #1abc9c;}
     .navigation a:focus{
             color: #1abc9c;}
+    .navigation a:hover{
+         color: #1abc9c;}
+
 
           
 .container{
         width: 1170px;
         padding: 0;
         font-size: 0px; 
-    margin: 0 auto;}   
+        margin: 0 auto;}   
         
     h2{
         display: block;
@@ -102,10 +103,10 @@ body{
     .featured li{
         float: left;
         margin-right: 30px;}
-    .featured button{
+    
+    .price button{
     float: left;
     border: none;
-    padding: 15px 40px;
     margin-bottom: 30px;
     min-height: 40px;
     min-width: 255px;
@@ -113,18 +114,33 @@ body{
     background: #323232;
     font-family: "Roboto";
     font-size: 18px;
-    line-height: 32px;
     font-weight: 900;
     color: white;
     text-align: left;
-    text-transform: uppercase}
+    text-transform: uppercase;}
 
+    .featured-list-item div{
+        position: relative;}
 
-    .price{
-        background: #8c8c8c;
-       
+    .price{ 
+       font-size: 18px;
+       font-family: "Roboto";
+       font-weight: 900;
+       color:white;
+       position: absolute;
+       right: 0; }
+
+    .price a{
+    position: absolute;
+    padding: 7px 12px ;}
+
+    .featured-list-item:hover .price button{
+        background: #1abc9c;
     }
-  
+    .featured-list-item:hover .price a{
+        background: #7fd9c7;
+    }
+
 
 .blog {
     float: left;}
