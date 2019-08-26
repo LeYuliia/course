@@ -10,7 +10,8 @@ body{
     font-family: "Roboto", "Open Sans", sans-serif; 
     color:#515151;
     font-size: 14px;
-    line-height: 26px;}  
+    line-height: 26px;
+margin-top: 36px;}  
        
 .clearfix::after{
     display: table;
@@ -18,32 +19,33 @@ body{
     clear: both;}
    
  header{
-        width: 1170px;
+        width: 1110px;
         padding-top: 36px;
         padding-bottom:102px;}
 
     .menu{
-        float: right;
-        font-size: 0px;              
-        margin-bottom: 110px;
+        margin: 0 auto;            
+        margin-bottom: 102px;
         padding: 0px;}
-    .menu-logo a{
+    .logo {
         display: inline-block;
         font-family:"Roboto";
         font-weight: 300;
         font-size: 30px;
         text-transform: uppercase;
-        float: left;
         margin: 0 auto;
         text-decoration: none; }   
-    .menu-logo a::first-letter{
+    .logo::first-letter{
         color: #1abc9c;
         font-weight: 900; }
     .menu li{
-         float: left;
+        float: left;
         font-size: 14px;
         list-style-type: none;
         margin-right: 30px;}
+      
+        .menu li:last-child{
+            margin-right: 0px;}
     
     .navigation{
         float: right;
@@ -65,17 +67,21 @@ body{
     .navigation a:hover{
          color: #1abc9c;}
 
-
           
 .container{
-        width: 1170px;
+        width: 1110px;
         padding: 0;
         font-size: 0px; 
-        margin: 0 auto;}   
+        margin: 0 auto;  
+    }   
+
+
+    p{ margin: 0;}
         
     h2{
         display: block;
-        margin: 0 auto;
+        margin: 0;
+        margin-bottom: 81px;
         text-align: center;
         font-family: "Roboto";
         font-size: 48px;
@@ -89,61 +95,72 @@ body{
         width: 164px;
         background-color: #4ec6ab;
         content: "";
-        margin-top: 24px;
-        margin-bottom: 81px}
+        margin-top: 24px;}
 
     img{
         display: block;}
 
+    .featured-list {
+        margin: 0;
+        padding: 0;
+    }
+    .featured-list-item{
+        float: left;
+        margin-right: 30px;
+    }
 
-    .featured-list{
-        padding-left: 30px;
-        float: left;
-        margin-bottom: 66px; }
-    .featured li{
-        float: left;
-        margin-right: 30px;}
+    .featured-list-item:nth-child(4n){
+    margin-right: 0px;
+    margin-bottom: 96px;} /*Пыталась задать margin-bottom для всего ul, но h2 его не чувствует. */
+
+
     
-    .price button{
+    .name{
     float: left;
-    border: none;
-    margin-bottom: 30px;
-    min-height: 40px;
-    min-width: 255px;
+    height: 40px;
+    width: 201px;
     cursor: pointer;
     background: #323232;
     font-family: "Roboto";
     font-size: 18px;
     font-weight: 900;
+    line-height: 32px;
     color: white;
     text-align: left;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    text-indent: 12px;
+    display: flex;
+    align-items: center;}
+.featured-list-item:not(:nth-last-child(-n+4)){
+    margin-bottom: 30px;}
+    
+    .price{
+    float: left;
+    height: 40px;
+    width: 54px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 32px;
+    background: #8c8c8c;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex; 
+    align-items: center;
+    justify-content: center}
 
-    .featured-list-item div{
-        position: relative;}
-
-    .price{ 
-       font-size: 18px;
-       font-family: "Roboto";
-       font-weight: 900;
-       color:white;
-       position: absolute;
-       right: 0; }
-
-    .price a{
-    position: absolute;
-    padding: 7px 12px ;}
-
-    .featured-list-item:hover .price button{
-        background: #1abc9c;
-    }
-    .featured-list-item:hover .price a{
-        background: #7fd9c7;
-    }
+    .featured-list-item:hover .name{
+        background: #1abc9c;}
+    .featured-list-item:hover .price{
+        background: #7fd9c7;}
 
 
-.blog {
-    float: left;}
+     .blog-list{
+        margin: 0;
+        padding: 0;}
+
     .blog-list-item{
         float: left;
         font-family:"Open Sans"; 
@@ -155,27 +172,36 @@ body{
         line-height: 26px;
         font-weight: 400;}
 
-    .blog-list-item:last-child {
+    .blog-list-item:nth-child(3n){
             margin-right: 0px;}
     
-    .blog-list-item button{
-    float: left;
+    .blog-list-item a{
+    display: block;
     border: none;
-    padding: 15px 40px;
-    min-height: 52px;
-    min-width: 160px;
+    height: 50px;
+    width: 160px;
     cursor: pointer;
     background: #4ec6ab;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
     color: white;
-    margin-bottom: 46px;}
+    text-align: center;
+    margin-bottom: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .blog-list-item p{
+        margin-bottom: 14px;
+    }
 
 h3{  
+    margin: 0;
     line-height: 26px;
     font-size: 16px;
-    font-weight: 700;}
+    font-weight: 700;
+    margin-bottom: 24px;}
 h3::after{
     display:block;
     height: 3px;
