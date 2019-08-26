@@ -11,7 +11,7 @@ body{
     color:#515151;
     font-size: 14px;
     line-height: 26px;
-margin-top: 36px;}  
+    margin-top: 36px;}  
        
 .clearfix::after{
     display: table;
@@ -67,13 +67,14 @@ margin-top: 36px;}
     .navigation a:hover{
          color: #1abc9c;}
 
-          
+       
+         
 .container{
         width: 1110px;
-        padding: 0;
+        padding-bottom: 42px; 
         font-size: 0px; 
-        margin: 0 auto;  
-    }   
+        margin: 0 auto; 
+        }   
 
 
     p{ margin: 0;}
@@ -176,7 +177,7 @@ margin-top: 36px;}
             margin-right: 0px;}
     
     .blog-list-item a{
-    display: block;
+    
     border: none;
     height: 50px;
     width: 160px;
@@ -187,10 +188,17 @@ margin-top: 36px;}
     font-weight: 400;
     color: white;
     text-align: center;
-    margin-bottom: 42px;
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    margin-bottom: 42px;}
+    .blog-list-item a:hover{
+        background: #4ec6ab;}
+
+    /*Понимаю, что с сылкой все сделала не так, как вы писали в комментариях, но padding-bottom не работает для секции, 
+    с помощью  display: block и vertical-aling:middle никак не выходит выровнять текст по центру и из макета не понятно
+     какой должен быть эффект при hover, поэтому я продублирвала фон. */
+
 
     .blog-list-item p{
         margin-bottom: 14px;
