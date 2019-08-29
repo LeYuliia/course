@@ -11,12 +11,13 @@ body{
     color:#515151;
     font-size: 14px;
     line-height: 26px;
-    margin-top: 36px;}  
+    }  
        
 .clearfix::after{
     display: table;
     max-width: 100%;
-    clear: both;}
+    clear: both;
+    content: ""}
    
  header{
         width: 1110px;
@@ -70,8 +71,7 @@ body{
        
          
 .container{
-        width: 1110px;
-        padding-bottom: 42px; 
+        width: 1110px; 
         font-size: 0px; 
         margin: 0 auto; 
         }   
@@ -98,6 +98,10 @@ body{
         content: "";
         margin-top: 24px;}
 
+    .featured{
+        padding-bottom: 96px;
+    }
+
     img{
         display: block;}
 
@@ -112,9 +116,7 @@ body{
 
     .featured-list-item:nth-child(4n){
     margin-right: 0px;
-    margin-bottom: 96px;} /*Пыталась задать margin-bottom для всего ul, но h2 его не чувствует. */
-
-
+    } 
     
     .name{
     float: left;
@@ -157,7 +159,9 @@ body{
     .featured-list-item:hover .price{
         background: #7fd9c7;}
 
-
+.blog{
+    padding-bottom: 42px;
+}
      .blog-list{
         margin: 0;
         padding: 0;}
@@ -190,8 +194,7 @@ body{
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 42px;}
+    justify-content: center;}
     .blog-list-item a:hover{
         background: #4ec6ab;}
 
