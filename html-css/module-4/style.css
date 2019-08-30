@@ -27,7 +27,8 @@ body{
     .menu{
         margin: 0 auto;            
         margin-bottom: 102px;
-        padding: 0px;}
+        margin-top: 42px;
+        padding: 0px;  }
     .logo {
         display: inline-block;
         font-family:"Roboto";
@@ -45,13 +46,14 @@ body{
         list-style-type: none;
         margin-right: 30px;}
       
-        .menu li:last-child{
-            margin-right: 0px;}
-    
+    .menu li:last-child{
+        margin-right: 0px;}
+            
     .navigation{
         float: right;
         margin: 0px;
         padding: 0px;
+        padding-top: 10px;
         font-size: 14px;
         list-style: none; }
     .navigation a {
@@ -68,8 +70,11 @@ body{
     .navigation a:hover{
          color: #1abc9c;}
 
-       
-         
+    .navigation-list{
+        margin:0;
+        padding:0;}
+   
+
 .container{
         width: 1110px; 
         font-size: 0px; 
