@@ -6,66 +6,127 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Module-5</title>
     <link rel="stylesheet" href="../normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-    <header>
-         <div  class="menu-logo">
-             <a href="#">Mart</a>
-            </div>
-            <nav class="navigation clearfix">
-                <ul class="navigation-list">
-                 <li><a href="#about us">about us</a></li>
-                <li><a href="#page">page</a></li>
-                <li><a href="#shop">shop</a></li>
-                <li><a href="#blog">blog</a></li>
-                <li><a href="#contact us">contact us</a></li>
-                </ul>
-             </nav>
-    </header>
+  <header class="menu">
+        <a class= "logo" href="#">Mart</a>
+    <nav class="navigation">
+        <ul class="navigation-list">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about us">about us</a></li>
+            <li><a href="#page">page</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#contact us">contact us</a></li>
+        </ul>
+    </nav>
+</header>      
+
+<main class="container">
+<div class="baner">
+    <ul class="slides">
+        <li>
+            <h2>AFFORDABLE PARIS TOURS</h2>
+            <p>CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+        </li>
+    </ul>   
+
+    <div class="slider">
+        <button class="slider-ctrl slider-ctrl-prev"> <img src="./img/prew.png" alt="">  </button>
+        <button class="slider-ctrl slider-ctrl-next"><img src="./img/next.png" alt=""> </button>
+    </div>
+    
+</div>
 
 
     <section class="collection">
-        <h2>New Collection</h2>
-        <ul>
-                    <li class="featured-list-item"> 
-                        <img src="./img/product1.png" alt="product1" width="255px" height="322px">
-                        <div class="price">
-                            <button>Blue Tshirt</button> 
-                            <img class="price" src="./img/price.png" alt="">
-                            <a class="price">$26</a> 
-                        </div>                   
-                        </li>
+        <h2 class="title">New Collection</h2>
 
-                    <li class="featured-list-item"> 
-                        <img src="./img/product2.jpg" alt="product2" width="255px" height="282px">
-                        <div class="price">
-                            <button>Blue Tshirt</button> 
-                            <img class="price" src="./img/price.png" alt="">
-                            <a class="price">$26</a> 
-                        </div>                                              
-                         </li>
+            <ul class="collection-list">
+                <li class="collection-list-item">
+                    <div class="block">
+                        <div class="buttons">
+                        <button class="like"></button> 
+                        <button class="arrow"></button>
+                        <button class="clock"></button>
+                      <div class="add">
+                        <button>Add to cart</button>
+                      </div>
+                      </div>
+                    </div>
+                <img src="./img/product1.jpg" alt="product1" width="255" height="322">
+                <div class="img-name">
+                        <p class="name">Blue Tshirt</p> 
+                        <p class="price">$26</p> 
+                    </div>                   
+                    </li>
 
-                    <li class="featured-list-item"> 
-                        <img src="./img/product3.jpg" alt="product3" width="255px" height="282px">
-                        <div class="price">
-                            <button>Blue Tshirt</button> 
-                            <img class="price" src="./img/price.png" alt="">
-                            <a class="price">$26</a> 
-                        </div>                                              
-                         </li>
+                <li class="collection-list-item"> 
+                        <div class="block">
+                            <div class="buttons">
+                                <button class="like"></button> 
+                                <button class="arrow"></button>
+                                <button class="clock"></button>
+                            <div class="add">
+                                <button>Add to cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    <img src="./img/product2.jpg" alt="product2" width="255" height="322">
+                    <div class="img-name">
+                        <p class="name">Woman Shirt</p> 
+                        <p class="price">$31</p> 
+                    </div>                                              
+                     </li>
 
-                    <li class="featured-list-item"> 
-                        <img src="./img/product4.jpg" alt="product4" width="255px" height="282px">
-                        <div class="price">
-                            <button>Blue Tshirt</button> 
-                            <img class="price" src="./img/price.png" alt="">
-                            <a class="price">$26</a> 
-                        </div>                                              
-                        </li>
+                <li class="collection-list-item">
+                        <div class="block">
+                            <div class="buttons">
+                                <button class="like"></button> 
+                                <button class="arrow"></button>
+                                <button class="clock"></button>
+                            <div class="add">
+                                <button>Add to cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    <img src="./img/product3.jpg" alt="product3" width="255" height="322">
+                    <div class="img-name">
+                        <p class="name">Yellow Tshirt</p> 
+                        <p class="price">$21</p> 
+                    </div>                                              
+                     </li>
+
+                <li class="collection-list-item"> 
+                        <div class="block">
+                            <div class="buttons">
+                                <button class="like"></button> 
+                                <button class="arrow"></button>
+                                <button class="clock"></button>
+                            <div class="add">
+                                <button>Add to cart</button>
+                            </div>
+                            </div>
+                        </div>
+                    <img src="./img/product4.jpg" alt="product4" width="255" height="322">
+                    <div class="img-name">
+                        <p class="name">Cool Lingerie</p> 
+                        <p class="price">$56</p> 
+                    </div>                                              
+                    </li>
         </ul>
-
     </section>
+
+   <footer class="footer">
+       <div class="footer-text">
+           All Rights Reserved © Dokan | Designed
+           <a href="#">ThemenGraph</a>
+       </div>
+    </footer>
+    </main>
 </body>
 </html>
