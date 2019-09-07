@@ -15,14 +15,11 @@ body{
 
 header{
         width: 1110px;
-        padding-top: 36px;
-        padding-bottom:32px;}
+        margin: 0 auto;}
 
-.menu{
-        margin: 0 auto;            
-        margin-bottom: 32px;
-        margin-top: 42px;
-        padding: 0px;  }
+.menu{          
+        padding-bottom: 32px;
+        padding-top: 42px;  }
     .menu li{
        float: left;
         font-size: 14px;
@@ -76,22 +73,25 @@ img{
         display: block;
         max-width: 100%;
         }
-
-.container{
-        font-size: 0px; 
-        margin: 0;
-        background-color: #e9f0fd;} 
-
 .baner{
-       position: relative;
-       margin: 0;
-       padding: 0;
-       height: 600px;
-       background-image: url(./img/slider.jpg);
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center;
-       margin-bottom: 92px;}
+        position: relative;
+        margin: 0;
+        padding: 0;
+        
+        background-image: url(./img/slider.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+            }
+.container{
+        font-size: 0; 
+        padding-bottom: 100px;
+        padding-top: 92px;;
+        display: block;
+        width: 1110px;
+        margin: 0 auto; } 
+
+
 
 .slides{
        position: absolute;
@@ -100,7 +100,8 @@ img{
        list-style: none;
        top: 50%;
        left: 50%;
-       transform: translate(-50%, -50%);}
+       transform: translate(-50%, -50%);
+       text-transform: uppercase;}
 
        .slides h2{
         margin: 0;
@@ -109,7 +110,6 @@ img{
         font-size: 60px;
        line-height: 82px;
        color: #ffffff;}
-
        .slides p{
         font-family: "Roboto";
         font-weight: 300;
@@ -132,30 +132,35 @@ img{
         background-color: #1abc9c;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);}
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: center;}
+    .slider-ctrl:hover{
+        background-color: #1abc9c;
+    }
+    
 
     .slider-ctrl-prev{
+        background-image: url(./img/prew.png);
         left:0;}
     .slider-ctrl-next{
+        background-image: url(./img/next.png);
         right: 0;}    
     .slider-ctrl img{
         margin: auto;}
 
-  
 .collection{
-   position: relative;
-   left:50%;
-   transform: translate(-50%);
-    width: 1110px;
-    display: block;
-    margin: 0;
-    margin-bottom: 100px;}
+    background-color: #e9f0fd;
 
+}
 .collection-list {
     height: 324px;
     margin: 0;
     padding: 0;
-    position: relative;}
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
 .collection-list-item{
     float: left;
     margin-right: 30px;
@@ -291,14 +296,15 @@ justify-content: center;}
         margin-bottom: 82px;}
     
 .footer{
-    height: 88px;
+    min-height: 88px;
     background-color: #323232;
     position: relative; 
     font-family:"Open Sans";
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    color: white;}
+    color: white;
+    }
 .footer-text{
     margin:0;
     padding: 0;
