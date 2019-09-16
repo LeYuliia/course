@@ -308,7 +308,7 @@ font-weight: 400;
         width: 234px;
         height: 36px;}
 
-    input[type="submit"]{
+   .footer button{
          border-style: none;
         background-color: #95e1d3;
         font-family: "Mantserrat";
