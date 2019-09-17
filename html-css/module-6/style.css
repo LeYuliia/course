@@ -63,6 +63,7 @@ padding-bottom: 90px;}
     display: block;}
 
 .menu-items a::after{
+    display: block;
     content: "";
     background-color: #f38181;
     height: 3px;
