@@ -160,7 +160,7 @@ font-weight: 400;
 .alarm::before{background-image: url(./img/service-icons/alarm.png);}
 .line::before{background-image: url(./img/service-icons/line.png);}
 .computer::before{background-image: url(./img/service-icons/computer.png);}
-.book::before{ background-image: url(./img/service-icons/BOOK.png);}
+.book::before{ background-image: url(./img/service-icons/book.png);}
 .home::before{ background-image: url(./img/service-icons/home.png);}
 .image::before{ background-image: url(./img/service-icons/image.png);}
 
