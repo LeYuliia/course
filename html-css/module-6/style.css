@@ -22,33 +22,33 @@ img{
     
 .container{
     width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    padding-bottom: 90px;
-}
+    margin: 0 auto;}
 
 
 .page-nav{
 min-height: 50px;
 align-items: flex-end;
 display: flex;
-justify-content: space-between;}
+justify-content: space-between;
+padding-bottom: 90px;}
 
 
 .logo{
     font-family: "Montserrat";
     font-weight: bold;
     font-size: 30px;
-    color: #95e1d3;}
+    color: #95e1d3;
+    text-decoration: none;}
+.logo:focus{
+    cursor: pointer;
+}
 
 .menu{
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
-    width: 490px;
+    min-width: 490px;
     list-style: none;
     font-family: "Montserrat";
     font-weight: 400;
@@ -60,8 +60,7 @@ justify-content: space-between;}
     transition: color 200ms linear;
     text-decoration: none;
     color: #95e1d3;
-    display: flex;
-    flex-direction: column;}
+    display: block;}
 
 .menu-items a::after{
     content: "";
@@ -82,9 +81,6 @@ justify-content: space-between;}
 
 
 
-
-
-
 h2{
     font-family: "Montserrat";
     font-weight: 700;
@@ -96,15 +92,10 @@ h2{
     margin-bottom: 64px;
     margin-top: 0;}
 
-h2::before{
+.pre-title{
     margin-bottom: 18px;
     font-family: "Kaushan Script";
     font-size: 24px;}
-
-.services h2::before{
-     content: "We work with";}
-.team h2::before{
-    content: "Who we are";}
 
 h2::after{
 content: "";
@@ -122,7 +113,9 @@ margin-top: 40px;
 
 
 
-
+.services{
+    padding-bottom: 90px;
+}
 .services-list{
     list-style: none;
     display: flex;
@@ -148,6 +141,8 @@ margin-top: 40px;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 8px;
 }
 .services-list-item p{
 font-family: "Roboto";
@@ -173,7 +168,12 @@ font-weight: 400;
 
 
 
-
+.team{
+    padding-bottom: 90px;}
+.team-text-container{
+    display: flex;
+    justify-content: center;
+}
 .team-text{
     width: 980px;
     font-family: "Roboto";
@@ -183,6 +183,7 @@ font-weight: 400;
     line-height: 24px;
     text-align: center;
     padding-bottom: 90px;
+    margin: 0;
 }
 
 .team-list{
@@ -215,7 +216,7 @@ font-weight: 400;
 .team-list-item:hover .block{
         opacity: 1;}
           
-    .block button {
+    .block a {
         width: 56px;
         height: 56px;
         border: none;
@@ -226,10 +227,11 @@ font-weight: 400;
         padding:0; 
         transition: background-color 200ms linear;}
 
-    .block button:hover{
-        background-color: #95e1d3;}
+    .block a:hover,
+    .block a:focus
+    { background-color: #95e1d3;}
     
-    .block-buttons{
+    .block-socials{
         height: 474px;
         display: flex;
         justify-content: center;
@@ -266,7 +268,6 @@ font-weight: 400;
 
 .footer{
      height: 62px;
-     width: 1200px;
      display: flex;
      justify-content: space-between;
      align-items: center;
