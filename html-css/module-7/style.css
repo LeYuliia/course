@@ -268,3 +268,20 @@ border-style: solid;
     font-size: 14px;
     color: #bbbbbb;}
 
+form input[type="email"]:valid{
+border-color: green;
+border-width: 2px;}
+form input[type="email"]:invalid{
+    border-color: red;}
+
+ form input[type="name"]:valid{
+     border-color: green;
+     border-width: 2px;}
+form input[type="name"]:invalid{
+     border-color: red;}
+            
+form textarea:valid{
+     border-color: green;
+    border-width: 2px;}
+form textarea:invalid{
+     border-color: red; }
