@@ -20,7 +20,9 @@ font-family: "Roboto Slab", "Montserrat", }
 img{
     display: block;
     max-width: 100%;} 
-
+a{
+    display: block;
+}
 
  /* petit-formal-script-regular - latin */
 @font-face {
@@ -82,21 +84,27 @@ img{
 .site-navigation{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    min-height: 66px;
+
 }
 .menu{
     display: flex;
     justify-content: space-between;
     min-width: 486px;
     list-style: none;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;}
 
 .menu-item a{
     text-decoration: none;  
     font-family: "Montserrat"; 
     font-weight: 600;
     font-size: 14px;
-    color: #222222;}
+    color: #222222;
+
+}
 
 .menu-item a:hover,
 .menu-item a:focus{
