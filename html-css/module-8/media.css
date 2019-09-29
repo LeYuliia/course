@@ -1,0 +1,68 @@
+@media(max-width:747px){
+    .container{
+        width: 320px;}
+}
+
+@media(min-width:748px) {
+    .container{
+    width: 748px;}
+header{
+    min-height: 702px;
+    background-size: auto;}
+    
+.header-items{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        height: 36px;
+        padding-top: 38px;
+        margin: 0 36px;}
+.promo{
+        width: 532px;}
+h1{
+        font-size: 52px;
+    margin: 146px 0 34px;}
+.promo p{
+        width: 100%;
+        font-size: 24px;}
+
+.promo button{
+    width: 226px;
+    height: 40px;}
+
+ h2{ margin: 0 0 28px;}
+
+ .partners{padding: 70px 0 40px 0;}
+
+.list-wrapper{
+width: 492px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;}
+
+    .partners-list{
+display: flex;
+justify-content: center;
+}
+
+.partners-list-item{
+    margin-bottom: 58px;
+}
+.partners-list-item:nth-child(2n){
+    margin-bottom: 38px;
+}
+
+.partner1{order: 1;}
+.partner2{order:3;}
+.partner3{order: 2;}
+.partner4{order: 4;}
+
+.partners button{
+    width: 192px;
+    height: 40px;
+}
+
+}
+
+  
+
