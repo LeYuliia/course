@@ -92,9 +92,10 @@ padding: 0;}
 
 header{
 min-height: 540px;
+min-width: 320px;
 background-image: url(./img/background.jpg);
 background-position: center;
-background-size: auto 540px;
+background-size: cover;
 color: #ffffff;
 font-family: "Montserrat";
 font-weight: bold;
@@ -142,6 +143,7 @@ text-transform: uppercase;}
           
       
 .promo{
+   
     text-align: center;
     display: block;
     margin: 0 auto;}
@@ -181,6 +183,12 @@ height: 40px;}
     padding: 66px 0 57px 0;
     font-family: "Montserrat";
    color: #333333;
+   
+}
+
+.partners-list {
+    display: flex;
+    justify-content: center;
 }
 
 h2{

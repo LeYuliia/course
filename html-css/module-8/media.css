@@ -5,18 +5,16 @@
 
 @media(min-width:748px) {
     .container{
-    width: 748px;}
+    width: 660px;}
 header{
     min-height: 702px;
-    background-size: auto;}
+    }
     
 .header-items{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
+    flex-direction: row-reverse;
         height: 36px;
         padding-top: 38px;
-        margin: 0 36px;}
+}
 .promo{
         width: 532px;}
 h1{
@@ -34,23 +32,18 @@ h1{
 
  .partners{padding: 70px 0 40px 0;}
 
-.list-wrapper{
+.partners-list-wrapper{
 width: 492px;
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;}
 
-    .partners-list{
-display: flex;
-justify-content: center;
-}
 
 .partners-list-item{
-    margin-bottom: 58px;
-}
+    margin-bottom: 58px;}
+
 .partners-list-item:nth-child(2n){
-    margin-bottom: 38px;
-}
+    margin-bottom: 0;}
 
 .partner1{order: 1;}
 .partner2{order:3;}
@@ -58,11 +51,23 @@ justify-content: center;
 .partner4{order: 4;}
 
 .partners button{
+    margin-top: 38px;
     width: 192px;
-    height: 40px;
-}
+    height: 40px;}
 
 }
 
-  
+
+@media(min-width:1440px){
+
+.container{width: 940px;}
+
+.promo{ width: 532px;}
+.partners-list-wrapper{
+    width: 940px;}
+
+.partners-list-item{
+    margin-bottom: 0;}
+} 
+
 
