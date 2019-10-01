@@ -16,10 +16,11 @@ header{
         padding-top: 38px;
 }
 .promo{
-        width: 532px;}
-h1{
+        width: 532px;
+    padding-top: 146px}
+.promo h2{
         font-size: 52px;
-    margin: 146px 0 34px;}
+    margin-bottom: 34px;}
 .promo p{
         width: 100%;
         font-size: 24px;}
@@ -28,15 +29,20 @@ h1{
     width: 226px;
     height: 40px;}
 
- h2{ margin: 0 0 28px;}
+ .partners h2{ margin: 0 0 28px;}
 
- .partners{padding: 70px 0 40px 0;}
+ .partners{
+    padding: 70px 0 40px 0;
+ display: flex;
+ justify-content: center;}
 
-.partners-list-wrapper{
-width: 492px;
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;}
+.partners-list{
+ width: 492px;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+margin: 0 auto;
+}
 
 
 .partners-list-item{
@@ -54,16 +60,16 @@ flex-wrap: wrap;}
     margin-top: 38px;
     width: 192px;
     height: 40px;}
-
 }
 
 
-@media(min-width:1440px){
+
+@media(min-width:960px){
 
 .container{width: 940px;}
 
 .promo{ width: 532px;}
-.partners-list-wrapper{
+.partners-list{
     width: 940px;}
 
 .partners-list-item{
