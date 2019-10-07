@@ -83,7 +83,6 @@ padding: 0;}
          url('../fonts/montserrat-v14-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
   }
 
-  /*align-items: center*/
 
 .container{
     width: 320px;
@@ -94,7 +93,6 @@ padding: 0;}
 
 header{
 min-height: 540px;
-min-width: 320px;
 background-image: url(../img/background.jpg);
 background-position: center;
 background-size: cover;
@@ -105,7 +103,6 @@ font-weight: bold;
 
 
 .authorization{
-    min-width: 154px;
  display: flex;  
  align-items: center; 
  justify-content: center;
@@ -125,12 +122,8 @@ font-weight: bold;
 justify-content: center;
 align-items: center;} 
 
-.navigation{
-    box-sizing: border-box;
-}
 
 .header-items{
-    
     height: 170px;
     margin-top: 20px;
     margin-bottom: 34px;
@@ -173,7 +166,6 @@ h2{
     font-size: 18px;
     display: block;
     margin: 0 auto;
-   width: 216px;
    margin-bottom: 18px;
 }
 
@@ -200,16 +192,11 @@ height: 40px;}
    
 }
 
-.partners-list {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 
 .partners h2{
    font-size: 22px;
-   margin: 0 0 18px;}
+   margin: 0 0 18px;
+ padding: 0;}
 
 h3{
     margin: 0;
@@ -243,7 +230,8 @@ h3{
     color: #ff4e50;
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 14px;}
+    font-size: 14px;
+padding: 0;}
 
 
     button:hover{
@@ -258,7 +246,7 @@ h3{
       width: 42px;
       height: 42px;
       position: absolute;
-     transform: translate(130px, -40px);}
+     transform: translate(120px, -40px);}
   
 .tv::after{ content: url(../img/tv-icon.png);}
 .flask::after{ content: url(../img/flask-icon.png);}

@@ -24,15 +24,14 @@ header{
 
 .logo{
     text-align: start;}
-.promo{
-        width: 532px;
-    }
+
 .promo h2{
         font-size: 52px;
     margin-bottom: 34px;}
 .promo p{
         width: 100%;
-        font-size: 24px;}
+        font-size: 24px;
+    margin-bottom: 36px;}
 
 .promo button{
     width: 226px;
@@ -42,15 +41,14 @@ header{
 
  .partners{
     padding: 70px 0 40px 0;
- display: flex;
- justify-content: center;}
+ }
 
 .partners-list{
  width: 492px;
+ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 align-items: flex-start;
-margin: 0 auto;
 }
 
 
