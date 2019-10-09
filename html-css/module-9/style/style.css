@@ -107,6 +107,7 @@ font-weight: bold;
  align-items: center; 
  justify-content: center;
  padding:0;
+ padding-bottom:115px;
 }
 
 
@@ -124,7 +125,6 @@ align-items: center;}
 
 
 .header-items{
-    height: 170px;
     margin-top: 20px;
     margin-bottom: 34px;
 padding:0;}
