@@ -257,12 +257,12 @@ padding-bottom: 170px;}
     margin-right: 30px;}
 
 
-    .alarm::before{background-image: url(./img/service-icons/alarm.png);}
-    .line::before{background-image: url(./img/service-icons/line.png);}
-    .computer::before{background-image: url(./img/service-icons/computer.png);}
-    .book::before{ background-image: url(./img/service-icons/book.png);}
-    .home::before{ background-image: url(./img/service-icons/home.png);}
-    .image::before{ background-image: url(./img/service-icons/image.png);}
+    .services__item--alarm::before{background-image: url(./img/service-icons/alarm.png);}
+    .services__item--line::before{background-image: url(./img/service-icons/line.png);}
+    .services__item--computer::before{background-image: url(./img/service-icons/computer.png);}
+    .services__item--book::before{ background-image: url(./img/service-icons/book.png);}
+    .services__item--home::before{ background-image: url(./img/service-icons/home.png);}
+    .services__item--image::before{ background-image: url(./img/service-icons/image.png);}
     
 
 /*--------------TEAM-----------------*/
