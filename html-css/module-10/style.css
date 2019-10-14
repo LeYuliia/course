@@ -130,6 +130,7 @@ margin-bottom: 44px;}
 }
 
 .banner{
+    
 text-align: center;
 padding-bottom: 230px;}
 
@@ -137,8 +138,7 @@ padding-bottom: 230px;}
     color: inherit;
     font-size: 150px;
     line-height: 1;
-    padding-bottom: 110px;
-    width: 820px;}
+    padding-bottom: 110px;}
 
     .banner__title::after{
     display: none;} 
