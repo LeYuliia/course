@@ -138,7 +138,11 @@ padding-bottom: 230px;}
     font-size: 150px;
     line-height: 1;
     padding-bottom: 110px;
+<<<<<<< HEAD
     width: 820px;}
+=======
+    width:820px;}
+>>>>>>> fa27a0482d22cd5aa1d2d0262dacea123907e9f8
 
     .banner__title::after{
     display: none;} 
