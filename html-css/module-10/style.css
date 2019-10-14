@@ -110,6 +110,11 @@ background-repeat: no-repeat;
 color:#ffffff;
 margin-bottom: 44px;}
 
+@media (min-resolution: 192dpi), (min-resolution:2dppx){
+    .page-header{
+        background-image: url(./img/background@2x.jpg);}
+}
+
 .banner{
 text-align: center;
 padding-bottom: 230px;}
@@ -279,26 +284,35 @@ padding-bottom: 170px;}
         height: 56px;
         border: none;
         margin-right: 1px;
-        background-position: center;
-        background-repeat: no-repeat;
+    
         background-color: rgba(252, 227, 138, 1);
-        padding:0; 
-        transition: background-color 200ms linear;}
+        transition: background-color 200ms linear;
+    
+        display: flex; /*Для центрирования иконок*/
+        justify-content: center;
+        align-items: center;
+    }
 
     .socials__link:hover,
     .socials__link:focus
-    { background-color: #95e1d3;}
+    { background-color: #f38181;}
     
     .socials{
-        height: 474px;
+        height: 470px;
         display: flex;
         justify-content: center;
         align-items: center;}
-           
-    .socials__icon--facebook{background-image: url(./img/social-icons/facebook.png);}
-    .socials__icon--twitter{background-image: url(./img/social-icons/twitter.png);}        
-    .socials__icon--pinterest{background-image: url(./img/social-icons/pinterest.png);}
-    .socials__icon--instagram{background-image: url(./img/social-icons/instagram.png);}
+
+    .socials__icon{
+        display: inline-block;
+        width: 26px;
+        height:26px;
+        fill:#f38181;
+    }
+
+    .socials__link:hover .socials__icon,
+    .socials__link:focus .socials__icon{
+        fill: #ffffff;}
 
     
 /*--------------------FOOTER-----------------------*/
