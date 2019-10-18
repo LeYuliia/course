@@ -1,0 +1,27 @@
+.banner{
+    
+    text-align: center;
+    padding-bottom: 230px;}
+    
+        .banner__title{
+        color: inherit;
+        font-size: 150px;
+        line-height: 1;
+        padding-bottom: 110px;
+    
+        &::after{
+        display: none;} 
+        }
+        
+        .banner__epigraph{
+        font-size: 72px;
+        padding-bottom: 20px;}
+    
+        .banner__button{
+        border-style: solid;
+        border-width: 3px;
+        border-color: $primary-white-color;
+        background-color: rgba(0, 0, 0, 0);
+        width: 164px;
+        height: 44px;}
+          

@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axZerk/gulp-starter-kit.git"
+    "url": "git+https://https://github.com/LeYuliia/goit-fe-course./tree/master/html-css/module_11"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/axZerk/gulp-starter-kit/issues"
+    "url": "https://https://github.com/LeYuliia/goit-fe-course./tree/master/html-css/module_11"
   },
   "homepage": "https://github.com/axZerk/gulp-starter-kit#readme",
   "devDependencies": {
