@@ -10,7 +10,7 @@ html{
 
 body{
     font-family: $main-font-stack; 
-    color:#515151;
-    font-size: 14px;
+    color:$primary-dark-color;
+    font-size: $main-text-size;
     line-height: 26px;
     }  
