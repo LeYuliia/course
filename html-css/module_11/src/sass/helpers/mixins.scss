@@ -14,3 +14,16 @@
     display: $display;
     content: $content;
 }
+
+
+
+
+@mixin generate-pseudo-icons ($baseclass, $list, $path, $ext){
+    @each $icon in $list{
+        .#{$baseclass}#{$icon}::before{
+            background-image: url(#{$path}#{$icon}.#{$ext});
+        }
+    }
+}
+
+

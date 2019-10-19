@@ -3,10 +3,9 @@
     background-position: center;
     background-repeat: no-repeat;
     color:$primary-white-color;
-    margin-bottom: 44px;}
+    margin-bottom: 44px;
     
     @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:2dppx){
-        .page-header{
             background-image: url(../images/background@2x.jpg);}
     }
 

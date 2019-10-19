@@ -10,15 +10,15 @@
         height: 32px;
         width: 32px;
         margin-right: 30px;}
+}
 
-
-    &--alarm::before{background-image: url(../images/icons/service-icons/alarm.png);}
-    &--line::before{background-image: url(../images/icons/service-icons/line.png);}
-    &--computer::before{background-image: url(../images/icons/service-icons/computer.png);}
-    &--book::before{ background-image: url(../images/icons/service-icons/book.png);}
-    &--home::before{ background-image: url(../images/icons/service-icons/home.png);}
-    &--image::before{ background-image: url(../images/icons/service-icons/image.png);}
- }
+$icons: alarm, book, computer, home, image, line;
+@include generate-pseudo-icons(
+    'services__item--', 
+    $icons, 
+    '../images/icons/service-icons/',
+    'png'
+    );
  
  .services__item-card{
      width: 300px;}
