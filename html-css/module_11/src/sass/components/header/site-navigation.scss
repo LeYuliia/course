@@ -1,33 +1,30 @@
 .site-navigation{
-    font-family: "Montserrat";
+    @include center-flex ('ver');
+    font-family: $main-font-stack;
     font-weight: 400;
     font-size: $main-text-size;
     text-transform: uppercase;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;}
+    justify-content: space-between;
+    }
 
     
 
 .site-navigation__item{
-    -webkit-transition: color 200ms linear;
-    -o-transition: color 200ms linear;
-    transition: color 200ms linear;
+    @include transition('color');
 
     &::after{
      @include pseudo (block, "");
-    background-color: #fce38a;
+     @include transition('width');
+    background-color: $bacground-yellow-color;
     height: 3px;
     width: 0%;
     margin-top: 4px;
-    -webkit-transition: width 200ms linear;
-    -o-transition: width 200ms linear;
-    transition: width 200ms linear;}
+    }
     
     &:hover:after{
     width: 100%;}
     &:hover{
-    color: #fce38a;}
+    color: $bacground-yellow-color;}
     }
 
 .site-navigation__icon{

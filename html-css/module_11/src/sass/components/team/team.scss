@@ -1,0 +1,28 @@
+.team{
+    text-align: center;}
+
+.team__text{
+        width: 980px;
+        line-height: 24px;
+        padding-bottom: 90px;
+
+    &-wrapper{
+        @include center-flex ('hor');}
+}
+    
+.team__list{
+    justify-content: space-around;
+}
+.team__item{
+@include transition('opacity');
+position: relative;
+background-image: url(../images/team-background.jpg);
+background-repeat: no-repeat;
+
+    &-name{
+        padding-top: 28px;}
+    
+    &-occupation{
+        font-style: italic;}
+    
+}

@@ -1,0 +1,28 @@
+.socials{
+    height: 470px;
+   @include center-flex ('all');}
+
+
+.socials__link {
+    @include center-flex ('all');
+    @include transition ('background');
+    width: 56px;
+    height: 56px;
+    border: none;
+    margin-right: 1px;
+    background-color:$bacground-yellow-color;
+    
+    &:hover,
+    &:focus{ background-color: $bacground-red-color;}
+}
+
+
+.socials__icon{
+    display: inline-block;
+    width: 26px;
+    height:26px;
+    fill:$bacground-red-color;}
+
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon{
+    fill: $primary-white-color;}

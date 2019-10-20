@@ -1,7 +1,7 @@
 .card-title{
-    font-family: "Montserrat";
+    font-family: $main-font-stack;
     font-weight: 600;
     font-size: $main-text-size;
-    color: #333333;
+    color: $primary-black-color;
     text-transform: uppercase;
     margin: 0;}

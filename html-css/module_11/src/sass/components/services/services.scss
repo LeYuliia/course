@@ -1,3 +1,7 @@
+.services__list{
+    justify-content: space-around;
+}
+
 .services__item{
     padding-bottom: 92px;
     @include center-flex ('ver');
