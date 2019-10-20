@@ -1,0 +1,103 @@
+.mission-block {
+    position: relative;
+    height: 100%;
+}
+
+.mission-wrap {
+  position: absolute;
+  bottom: 120px;
+  left: 15px;
+
+  @media only screen and (max-width: 768px) {
+    right: 15px;
+  }
+}
+
+.mission-wrap__title {
+  font-family: $secondary-font;
+  font-size: 65px;
+  font-weight: 900;
+  line-height: 100%;
+  color: $main-white-color;
+  margin-bottom: 50px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+}
+
+.mission-wrap__subtitle-block {
+  background-color: rgba(14, 17, 27, 0.7);
+  box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+  }
+  
+}
+
+.subtitle-block__text {
+  position: relative;
+  color: $main-white-color;
+  font-size: 25px;
+  line-height: 1.4;
+  margin-left: 20px;
+
+  &--yellow {
+    font-weight: 700;
+    color: $main-yellow-color;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    border-left: 3px solid $main-yellow-color;
+    width: 100%;
+    height: 100%;
+    left: -20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 27px;
+    text-align: center;
+    margin-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    font-size: 16px;
+  }
+}
+
+.mission-block__scroll-down {
+  bottom: 50px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+}
+
+.scroll-down__btn {
+  background-color: transparent;
+  border: none;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+ 
+.scroll-down__btn-svg {
+  fill: $main-white-color;
+  transform: rotate(90deg);
+}

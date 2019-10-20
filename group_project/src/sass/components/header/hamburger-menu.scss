@@ -1,0 +1,90 @@
+button {
+    border: none;
+    outline: none;
+  }
+    
+  .hamburger-menu {
+    position: absolute;
+    display: none;
+    padding: 19px 8px;
+    border: 0;
+    background: 0 0;
+    height: 0;
+    z-index: 2;
+    transition: all .4s;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    right: 40px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 1280px) {
+        display: block;
+    }
+  }
+    
+  .hamburger-menu__icon {
+    display: block;
+    position: relative;
+    background: $main-white-color;
+  }
+    
+  .hamburger-menu__icon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    background: $main-white-color;
+    transition: bottom 300ms 300ms cubic-bezier(.23,1,.32,1),transform 300ms cubic-bezier(.23,1,.32,1);
+    transition: bottom 300ms 300ms cubic-bezier(.23,1,.32,1),transform 300ms cubic-bezier(.23,1,.32,1),-webkit-transform 300ms cubic-bezier(.23,1,.32,1);
+  }
+    
+  .hamburger-menu__icon:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: $main-white-color;
+    transition: top 300ms 300ms cubic-bezier(.23,1,.32,1),transform 300ms cubic-bezier(.23,1,.32,1);
+    transition: top 300ms 300ms cubic-bezier(.23,1,.32,1),transform 300ms cubic-bezier(.23,1,.32,1),-webkit-transform 300ms cubic-bezier(.23,1,.32,1);
+  }
+
+  .hamburger-menu__icon.scrolled,
+  .hamburger-menu__icon.scrolled:before,
+  .hamburger-menu__icon.scrolled::after {
+    background: $main-black-color;
+  }
+
+  .hamburger-menu__icon.white,
+  .hamburger-menu__icon.white:before,
+  .hamburger-menu__icon.white::after {
+    background: $main-white-color;
+  }
+    
+  .hamburger-menu__icon, .hamburger-menu__icon:after, .hamburger-menu__icon:before {
+    width: 24px;
+    height: 2px;
+  }
+    
+  .hamburger-menu__icon.animate {
+    background: 0 0;
+  }
+    
+  .hamburger-menu__icon.animate:before {
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(.23,1,.32,1),transform 300ms 300ms cubic-bezier(.23,1,.32,1);
+    transition: bottom 300ms cubic-bezier(.23,1,.32,1),transform 300ms 300ms cubic-bezier(.23,1,.32,1),-webkit-transform 300ms 300ms cubic-bezier(.23,1,.32,1);
+  }
+    
+  .hamburger-menu__icon.animate:after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(.23,1,.32,1),transform 300ms 300ms cubic-bezier(.23,1,.32,1);
+    transition: top 300ms cubic-bezier(.23,1,.32,1),transform 300ms 300ms cubic-bezier(.23,1,.32,1),-webkit-transform 300ms 300ms cubic-bezier(.23,1,.32,1);
+  }
